@@ -1,0 +1,11 @@
+apiVersion: demo.demo.io/v1
+kind: LocalFile
+metadata:
+  labels:
+    app.kubernetes.io/name: localfile-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: localfile-sample
+spec:
+  path: /tmp/hello.txt
+  content: "Hello from LocalFile CR!"
+  # TODO(user): Add fields here
